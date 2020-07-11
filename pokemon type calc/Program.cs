@@ -151,6 +151,7 @@ namespace pokemon_type_calc
 				currentResistedLosers.Remove(currentResistedLosers[currentResistedLosers.Count - 1]);
 			}
 
+			//custom sort functions for tuples
 			int sortOffense ((typeOrder, typeOrder, int[]) x, (typeOrder, typeOrder, int[]) y)
 			{
 				return x.Item3[0].CompareTo(y.Item3[0]);
