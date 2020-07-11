@@ -12,13 +12,8 @@ namespace pokemon_type_calc
 		static Dictionary<(typeOrder, typeOrder), int[]> typePairScores = new Dictionary<(typeOrder, typeOrder), int[]>();
 		static List<(typeOrder, typeOrder, int[])> currentSuperEffectiveWinners = new List<(typeOrder, typeOrder, int[])>();
 		static List<(typeOrder, typeOrder, int[])> currentSuperEffectiveLosers = new List<(typeOrder, typeOrder, int[])>();
-		static int currentSuperEffectiveTargets = 0;
-		static int currentLeastEffectiveTargets = 99;
 		static List<(typeOrder, typeOrder, int[])> currentResistedWinners = new List<(typeOrder, typeOrder, int[])>();
 		static List<(typeOrder, typeOrder, int[])> currentResistedLosers = new List<(typeOrder, typeOrder, int[])>();
-		static int currentResistedTargets = 0;
-		static List<(typeOrder, typeOrder, int[])> currentEffectiveDeltaWinners = new List<(typeOrder, typeOrder, int[])>();
-		static int currentEffectiveDelta = 0;
 
 		enum typeOrder { normal, fire, water, electric, grass, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon, dark, steel, fairy };
 
